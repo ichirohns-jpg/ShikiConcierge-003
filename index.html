@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b3f73" />
+  <title>志木モデル デジタル回覧板・志木市役所AIコンシェルジュ</title>
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="志木モデル" />
+
+  <style>
+    :root{
+      --bg:#eef3f8;
+      --card:#ffffff;
+      --line:#d9e2ec;
+      --text:#17324d;
+      --muted:#5b6f84;
+      --primary:#0b3f73;
+      --primary2:#2757a5;
+      --shadow:0 8px 24px rgba(0,0,0,.08);
+      --radius:20px;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+    }
+
+    .page{
+      width:100%;
+      min-height:100vh;
+      background:var(--bg);
+    }
+
+    .topbar{
+      background:var(--primary);
+      color:#fff;
+      text-align:center;
+      padding:18px 12px 16px;
+      box-shadow:0 2px 10px rgba(0,0,0,.12);
+    }
+
+    .topbar-title{
+      margin:0;
+      font-size:clamp(24px,4.5vw,36px);
+      line-height:1.45;
+      font-weight:900;
+      letter-spacing:.02em;
+    }
+
+    .topbar-sub{
+      margin-top:6px;
+      font-size:clamp(14px,2.5vw,18px);
+      line-height:1.8;
+      font-weight:700;
+      opacity:.96;
+    }
+
+    .container{
+      width:100%;
+      max-width:960px;
+      margin:0 auto;
+      padding:12px 10px 24px;
+    }
+
+    .card{
+      background:var(--card);
+      border:2px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .card-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:14px 14px 12px;
+      background:#f7fafd;
+      border-bottom:2px solid #e6edf5;
+      flex-wrap:wrap;
+    }
+
+    .card-title{
+      margin:0;
+      font-size:clamp(20px,3vw,28px);
+      line-height:1.5;
+      font-weight:900;
+      color:var(--primary);
+    }
+
+    .actions{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:56px;
+      padding:0 18px;
+      border-radius:14px;
+      text-decoration:none;
+      border:2px solid transparent;
+      font-size:clamp(15px,2.3vw,18px);
+      line-height:1.4;
+      font-weight:900;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+
+    .btn-primary{
+      background:var(--primary2);
+      color:#fff;
+    }
+
+    .btn-secondary{
+      background:#eef3f8;
+      color:var(--primary);
+      border-color:#d6e0ea;
+    }
+
+    .frame-wrap{
+      padding:10px;
+      background:var(--bg);
+    }
+
+    iframe{
+      display:block;
+      width:100%;
+      height:84vh;
+      min-height:760px;
+      border:none;
+      border-radius:16px;
+      background:var(--bg);
+    }
+
+    .note{
+      margin-top:12px;
+      background:#fff;
+      border:2px solid var(--line);
+      border-radius:16px;
+      padding:16px 14px;
+      font-size:clamp(15px,2.3vw,18px);
+      line-height:1.9;
+      font-weight:800;
+      color:var(--muted);
+    }
+
+    .fallback{
+      display:none;
+      margin-top:12px;
+      background:#fff8e8;
+      border:2px solid #f1d48b;
+      border-radius:16px;
+      padding:16px 14px;
+      font-size:clamp(15px,2.3vw,18px);
+      line-height:1.9;
+      font-weight:800;
+      color:#745700;
+    }
+
+    @media (max-width:640px){
+      .container{
+        padding:10px 8px 20px;
+      }
+
+      .card-head{
+        padding:12px;
+      }
+
+      .actions{
+        width:100%;
+      }
+
+      .actions .btn{
+        width:100%;
+      }
+
+      iframe{
+        height:80vh;
+        min-height:680px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <h1 class="topbar-title">志木モデル デジタル回覧板・志木市役所AIコンシェルジュ</h1>
+      <div class="topbar-sub">GitHub Pages から見やすく表示するためのページです</div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <div class="card-head">
+          <h2 class="card-title">公開ページ</h2>
+          <div class="actions">
+            <a
+              class="btn btn-primary"
+              href="https://script.google.com/macros/s/AKfycbyn_2uYp_uAW4x9RzdmrjQSneXchiFy2fEafHs5iPdbUf8uMCo-XaiawgzgVVWDaKFE/exec"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              別画面で開く
+            </a>
+            <button class="btn btn-secondary" type="button" onclick="reloadFrame()">更新する</button>
+          </div>
+        </div>
+
+        <div class="frame-wrap">
+          <iframe
+            id="appFrame"
+            src="https://script.google.com/macros/s/AKfycbyn_2uYp_uAW4x9RzdmrjQSneXchiFy2fEafHs5iPdbUf8uMCo-XaiawgzgVVWDaKFE/exec"
+            title="志木モデル デジタル回覧板・志木市役所AIコンシェルジュ"
+            loading="eager"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+
+          <div class="note">
+            うまく表示されない時は「別画面で開く」を押してください。
+          </div>
+
+          <div class="fallback" id="fallbackBox">
+            埋め込み表示がうまく出ない場合があります。上の「別画面で開く」から直接ページを開いてください。
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    function reloadFrame() {
+      var frame = document.getElementById('appFrame');
+      frame.src = frame.src;
+    }
+
+    (function () {
+      var frame = document.getElementById('appFrame');
+      var fallback = document.getElementById('fallbackBox');
+      var loaded = false;
+
+      frame.addEventListener('load', function () {
+        loaded = true;
+      });
+
+      setTimeout(function () {
+        if (!loaded) {
+          fallback.style.display = 'block';
+        }
+      }, 4000);
+    })();
+  </script>
+</body>
+</html>
